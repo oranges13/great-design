@@ -1,0 +1,70 @@
+.tweed {
+	background: url('../images/tweed.png') fixed;
+}
+.tweed-2x {
+	background: url('../images/tweed_@2X.png') fixed;
+}
+.science {
+	background: url('../images/science.png') fixed;
+}
+.fancy {
+	background: url('../images/fancy.jpg') fixed;
+}
+
+body {
+	padding-top: 50px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+}
+
+.subhead {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 2em;
+}
+
+#header, #header a, #header a:visited, #header a:hover {
+	color: #fff;
+}
+
+.emph {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.navbar .emph, .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #ccc;
+	text-shadow: 2px 2px 0px rgb(0,0,0);
+}
+
+/*.navbar-nav>li>a {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}*/
+
+.pane {
+	margin-top: 10%;
+	margin-bottom: 12%;
+}
+
+.btn-contact, .btn-quals {
+	background-color: #269;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 2em;
+	-webkit-box-shadow: 4px 4px 0px 0px #333;
+	-moz-box-shadow:    4px 4px 0px 0px #333;
+	box-shadow:         4px 4px 0px 0px #333;
+}
+
+.btn-quals {
+	background-color: #350;
+}
+
