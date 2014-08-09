@@ -46,13 +46,25 @@
 
 #quals .pane, #program .pane {
 	background: rgba(255,255,255,.9);
-	padding: 20px 20px 30px;
+	padding: 20px 20px 40px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:    5px 5px rgba(0, 0, 0, 0.5);
 	box-shadow:         5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#quals ul {
+	list-style: none;
+	font-size: 15px;
+}
+
+#quals ul>li:before {
+	content: "\f101";
+	margin-right: 5px;
+	font-family: "FontAwesome";
+	color: #269;
 }
 
 /*Navbar*/
@@ -97,7 +109,6 @@ p.subhead {
 .pane {
 	margin-top: 10%;
 	margin-bottom: 12%;
-	z-index: 100;
 }
 
 /* Sprocket Animation */
@@ -156,6 +167,23 @@ p.subhead {
     to { transform:rotate(360deg); }
 }
 
+/*Animation*/
+
+.delay-5 {
+	-webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+}
+
+.delay-1 {
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+
+.delay-15 {
+	-webkit-animation-delay: 1.5s; /* Chrome, Safari, Opera */
+    animation-delay: 1.5s;
+}
+
 /*Buttons*/
 
 .btn-contact, .btn-quals {
@@ -168,6 +196,7 @@ p.subhead {
 	-moz-box-shadow:    4px 4px 0px 0px rgba(0,0,0,.4);
 	box-shadow:         4px 4px 0px 0px rgba(0,0,0,.4);
 	color: #eee;
+	z-index: 2;
 }
 
 #contact input, #contact textarea {
@@ -218,4 +247,26 @@ p.subhead {
 	color: rgba(35,76,117, .2);
 	font-size: 7em;
 	text-shadow: none;
+}
+
+.html5 {
+	background: #e34c26;
+	background: -moz-linear-gradient(left, #e34c26 0%, #e34c26 49%, #f06529 49%, #f06529 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e34c26), color-stop(49%,#e34c26), color-stop(49%,#f06529), color-stop(100%,#f06529));
+	background: -webkit-linear-gradient(left, #e34c26 0%,#e34c26 49%,#f06529 49%,#f06529 100%);
+	background: -o-linear-gradient(left, #e34c26 0%,#e34c26 49%,#f06529 49%,#f06529 100%);
+	background: -ms-linear-gradient(left, #e34c26 0%,#e34c26 49%,#f06529 49%,#f06529 100%);
+	background: linear-gradient(to right, #e34c26 0%,#e34c26 49%,#f06529 49%,#f06529 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e34c26', endColorstr='#f06529',GradientType=1 );
+}
+
+.css3 {
+	background: #1e69de;
+	background: -moz-linear-gradient(left, #1e69de 0%, #3690f0 49%, #54a3ee 49%, #6db3f2 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e69de), color-stop(49%,#3690f0), color-stop(49%,#54a3ee), color-stop(100%,#6db3f2));
+	background: -webkit-linear-gradient(left, #1e69de 0%,#3690f0 49%,#54a3ee 49%,#6db3f2 100%);
+	background: -o-linear-gradient(left, #1e69de 0%,#3690f0 49%,#54a3ee 49%,#6db3f2 100%);
+	background: -ms-linear-gradient(left, #1e69de 0%,#3690f0 49%,#54a3ee 49%,#6db3f2 100%);
+	background: linear-gradient(to right, #1e69de 0%,#3690f0 49%,#54a3ee 49%,#6db3f2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#6db3f2',GradientType=1 );
 }
