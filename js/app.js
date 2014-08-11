@@ -3,12 +3,17 @@ $('a[href*=#]').on('click', function(event){
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1300);
 });
 
-// Scrollspy act-alike
+// Waypoints
+
+$('#hero').waypoint(function() {
+	// Reset when coming to the top
+	$('li.active').removeClass('active');
+});
 
 $('section').waypoint(function() {
 	$('li.active').removeClass('active');
 	$('a[href=#'+$(this).attr("id")+']').parents('li').addClass('active');
-},{offset: '200px'});
+},{offset: '20%'});
 
 $('#quals').waypoint(function() {
 	// Reset opacity
@@ -35,6 +40,22 @@ $('#program').waypoint(function() {
 		}, 700);
 	})
 }, {offset: '50%'});
+
+// Effects
+
+$('#program i').mouseenter(function() {
+	$(this).animate({
+		"font-size": "12em",
+		"color": "#269"
+	}, 150)
+});
+
+$('#program i').mouseleave(function() {
+	$(this).animate({
+		"font-size": "10em",
+		"color": "#666"
+	}, 150)
+});
 
 // Paralaxx Effect
 
