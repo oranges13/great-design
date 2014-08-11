@@ -1,15 +1,21 @@
 /*Backgrounds*/
 .tweed {
 	background-image: url('../images/tweed.png');
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	text-shadow: 2px 2px rgba(0,0,0, .7);
 	color: #eee;
+	-webkit-box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 7px 2px 0px rgba(0, 0, 0, 0.5);
 }
 .tweed-2x {
 	background-image: url('../images/tweed_@2X.png');
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	text-shadow: 2px 2px 2px rgba(0,0,0, .7);
 	color: #eee;
+	-webkit-box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 7px 2px 0px rgba(0, 0, 0, 0.5);
 }
 .science {
 	background-image: url('../images/science.png');
@@ -23,13 +29,21 @@
 }
 .paper {
 	background-image: url('../images/exclusive_paper.png');
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	color: #444;
+	-webkit-box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	z-index: 2;
 }
 .paper-2x {
 	background-image: url('../images/exclusive_paper_@2X.png');
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	color: #444;
+	-webkit-box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	z-index: 2;
 }
 .isomet {
 	background-image: url('../images/isomet.jpg');
@@ -50,9 +64,9 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:    5px 5px rgba(0, 0, 0, 0.5);
-	box-shadow:         5px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         5px 5px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #quals ul {
@@ -67,17 +81,61 @@
 	color: #269;
 }
 
+/*Programming*/
+
+#program h2, #program h3 {
+	color: #444;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+
+#program {
+	color: #666;
+}
+
+#program .fa {
+	font-size: 10em;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+
+#program .fa:hover {
+	text-shadow: 4px 4px 2px rgba(34,102,153,.4);
+}
+
+#program i {
+	-webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+}
+
+/*Contact*/
+
+#contact-list ul {
+	list-style: none;
+}
+
+#contact-list i {
+	font-size: 2em;
+	width: 60px;
+}
+
+#contact-list li {
+	padding: 10px 0;
+	font-size: 1.6em;
+}
+
+#contact-list a {
+	color: #6AD;
+}
+
+#contact-list a:hover {
+	text-decoration: none;
+	border-bottom: 1px dashed #eee;
+}
+
 /*Navbar*/
 
 .navbar .emph, .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:hover {
 	color: #ccc;
 	text-shadow: 2px 2px 0px rgb(0,0,0);
-}
-
-nav.navbar-default {
-	-webkit-box-shadow: 0px 4px 2px rgba(0,0,0,.5);
-	-moz-box-shadow:    0px 4px 2px rgba(0,0,0,.5);
-	box-shadow:         0px 4px 2px rgba(0,0,0,.5);
 }
 
 /* Design Elements */
@@ -192,25 +250,25 @@ p.subhead {
 	font-weight: 700;
 	font-size: 2em;
 	margin-bottom: 20px;
-	-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,.4);
-	-moz-box-shadow:    4px 4px 0px 0px rgba(0,0,0,.4);
-	box-shadow:         4px 4px 0px 0px rgba(0,0,0,.4);
+	-webkit-box-shadow: 4px 4px 2px 0px rgba(0,0,0,.4);
+	-moz-box-shadow:    4px 4px 2px 0px rgba(0,0,0,.4);
+	box-shadow:         4px 4px 2px 0px rgba(0,0,0,.4);
 	color: #eee;
 	z-index: 2;
 }
 
 #contact input, #contact textarea {
-	-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,.4);
-	-moz-box-shadow:    4px 4px 0px 0px rgba(0,0,0,.4);
-	box-shadow:         4px 4px 0px 0px rgba(0,0,0,.4);
+	-webkit-box-shadow: 4px 4px 2px 0px rgba(0,0,0,.4);
+	-moz-box-shadow:    4px 4px 2px 0px rgba(0,0,0,.4);
+	box-shadow:         4px 4px 2px 0px rgba(0,0,0,.4);
 }
 
 .btn-contact:hover, .btn-quals:hover {
 	color: #eee;
 	background-color: #333;
-	-webkit-box-shadow: 4px 4px 0px 0px rgba(34,102,153,.4);
-	-moz-box-shadow:    4px 4px 0px 0px rgba(34,102,153,.4);
-	box-shadow:         4px 4px 0px 0px rgba(34,102,153,.4);
+	-webkit-box-shadow: 4px 4px 2px 0px rgba(34,102,153,.4);
+	-moz-box-shadow:    4px 4px 2px 0px rgba(34,102,153,.4);
+	box-shadow:         4px 4px 2px 0px rgba(34,102,153,.4);
 }
 
 .btn-quals {
