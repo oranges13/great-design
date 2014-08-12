@@ -1,3 +1,10 @@
+$('document').ready(function() {
+	$("a[rel^='prettyPhoto']").prettyPhoto({
+		theme: 'dark_rounded',
+		social_tools: '',
+	});
+});
+
 $('a[href*=#]').on('click', function(event){     
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1300);
@@ -10,10 +17,19 @@ $('#hero').waypoint(function() {
 	$('li.active').removeClass('active');
 });
 
-$('section').waypoint(function() {
-	$('li.active').removeClass('active');
-	$('a[href=#'+$(this).attr("id")+']').parents('li').addClass('active');
-},{offset: '20%'});
+$('section').waypoint(function(dir) {
+	if(dir == 'down') {
+		$('li.active').removeClass('active');
+		$('a[href=#'+$(this).attr("id")+']').parents('li').addClass('active');
+	}
+}, {offset: '20%'});
+
+$('section').waypoint(function(dir) {
+	if(dir == 'up') {
+		$('li.active').removeClass('active');
+		$('a[href=#'+$(this).attr("id")+']').parents('li').addClass('active');
+	}
+}, {offset: '-20%'});
 
 $('#quals').waypoint(function() {
 	// Reset opacity
