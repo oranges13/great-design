@@ -7,6 +7,7 @@ $('document').ready(function() {
 
 $('a[href*=#]').on('click', function(event){     
     event.preventDefault();
+    ga('send', 'event', 'navigate', $(this).attr("href"));
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1300);
 });
 
@@ -74,6 +75,10 @@ $('#reviews').waypoint(function() {
 	})
 }, {offset: "50%"});
 
+$('#contact').waypoint(function() {
+	ga('send', 'event', 'contact', 'view');
+}, {offset: '50%'});
+
 // Effects
 
 $('#program i').mouseenter(function() {
@@ -109,6 +114,7 @@ $('section[data-type="background"]').each(function(){
 
 $('#contact form').submit(function(e) {
 		e.preventDefault;
+		ga('send', 'event', 'contact', 'submit');
 		$.post('mailer.php', $('#contact form').serialize(), function(data) {
 			$("#contact form button").addClass("btn-success").removeClass("btn-contact").text("Request Sent!").attr("disabled", "disabled");
 		});
