@@ -118,6 +118,49 @@
 	border-radius: 10px;
 }
 
+#design img:hover {
+	-webkit-box-shadow: 7px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    7px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         7px 7px 2px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	left: -2px;
+	top: -2px;
+}
+
+/*Reviews*/
+
+#reviews .pane {
+	background: rgba(0,0,0,.7);
+	padding: 20px 20px 40px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#reviews p {
+	position: relative;
+}
+
+.quote {
+	font-family: Lato;
+	font-style: italic;
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+
+.quote:before {
+	position: relative;
+	font-family: "FontAwesome";
+	content: "\f10d";
+	font-size: 2em;
+	font-style: normal;
+	margin-right: 5px;
+	top: .2em;
+}
+
 /*Contact*/
 
 #contact-list ul {
@@ -339,4 +382,12 @@ p.subhead {
 	background: -ms-linear-gradient(left, #1e69de 0%,#3690f0 49%,#54a3ee 49%,#6db3f2 100%);
 	background: linear-gradient(to right, #1e69de 0%,#3690f0 49%,#54a3ee 49%,#6db3f2 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#6db3f2',GradientType=1 );
+}
+
+footer {
+	background: #333;
+	border-top: 5px solid #269;
+	font-family: "Montserrat";
+	font-size: 1.4em;
+	color: #fff;
 }

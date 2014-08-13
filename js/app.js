@@ -31,18 +31,20 @@ $('section').waypoint(function(dir) {
 	}
 }, {offset: '-20%'});
 
+
 $('#quals').waypoint(function() {
 	// Reset opacity
 	$('#rocket, #term, #degree').css("opacity",0);
-}, {offset: '90%'});
+}, {offset: '80%'});
 
 $('#quals').waypoint(function() {
 	$('#quals div').each(function(i) {
-		$(this).delay(200*i).animate({
+		$(this).delay(100*i).animate({
 			opacity: 1
 		}, 700);
 	})
 }, {offset: '50%'});
+
 
 $('#program').waypoint(function() {
 	// Reset Opacity
@@ -51,11 +53,26 @@ $('#program').waypoint(function() {
 
 $('#program').waypoint(function() {
 	$('#program i').each(function(i) {
-		$(this).delay(200*i).animate({
+		$(this).delay(100*i).animate({
 			opacity: 1
 		}, 700);
 	})
 }, {offset: '50%'});
+
+
+$('#reviews').waypoint(function() {
+	//Reset Opacity
+	$('#reviews p').css("opacity",0).css("top", "40px");
+}, {offset: '90%'});
+
+$('#reviews').waypoint(function() {
+	$('#reviews p').each(function(i) {
+		$(this).delay(100*i).animate({
+			opacity: 1,
+			top: 0
+		}, 700);
+	})
+}, {offset: "50%"});
 
 // Effects
 
@@ -73,7 +90,7 @@ $('#program i').mouseleave(function() {
 	}, 150)
 });
 
-// Paralaxx Effect
+// Paralax Effect
 
 $window = $(window);
  
