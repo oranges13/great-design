@@ -110,7 +110,7 @@ $('section[data-type="background"]').each(function(){
 $('#contact form').submit(function(e) {
 		e.preventDefault;
 		$.post('mailer.php', $('#contact form').serialize(), function(data) {
-				console.log(data);
+			$("#contact form button").addClass("btn-success").removeClass("btn-contact").text("Request Sent!").attr("disabled", "disabled");
 		});
 		return false;
 });
