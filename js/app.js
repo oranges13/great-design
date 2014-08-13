@@ -104,3 +104,13 @@ $('section[data-type="background"]').each(function(){
     $scroll.css({ backgroundPosition: coords });    
   });
 });
+
+// Contact
+
+$('#contact form').submit(function(e) {
+		e.preventDefault;
+		$.post('mailer.php', $('#contact form').serialize(), function(data) {
+				console.log(data);
+		});
+		return false;
+});
