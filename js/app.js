@@ -3,6 +3,7 @@ $('document').ready(function() {
 		theme: 'dark_rounded',
 		social_tools: '',
 	});
+	$("#honeypot").hide();
 });
 
 $('a[href*=#]').on('click', function(event){     
